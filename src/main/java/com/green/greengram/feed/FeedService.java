@@ -144,10 +144,6 @@ public class FeedService {
             pics.add(item.getPic());//ArrayList 주소값을 가진 pics에 사진을 넣는다.(그러면 ArrayList에 사진들어간다.)
         }
 
-        for(FeedGetRes res : list){ //위에서 정리한거 집어넣으려고
-            res.setPics(picHashMap.get(res.getFeedId())); //feedId 맞게 사진(ArrayList<String> 객체의 주소값) 넣어준다.
-        }
-
 
         /*int lastIndex = 0;
         for(FeedGetRes res : list){
@@ -176,11 +172,11 @@ public class FeedService {
                 commentHashMap.put(feedId, feedCommentGetRes); //key값, value값 넣어줌
             }
             FeedCommentGetRes feedCommentGetRes = commentHashMap.get(feedId); //value(객체주소값) 넣어줌
-            feedCommentGetRes.getCommentList().add(item); // 여기까지가 new ArrayList<>() 객체주소값 넘오오는 과정
+            feedCommentGetRes.getCommentList().add(item); // 여기까지가 new ArrayList<>() 객체주소값 넘어오는 과정
         }
 
-        for(FeedGetRes res : list) { //여기서부터 댓글정리
-            res.setPics(picHashMap.get(res.getFeedId()));
+        for(FeedGetRes res : list) { //여기서부터 댓글정리 (위에서 정리한거 집어넣으려고)
+            res.setPics(picHashMap.get(res.getFeedId())); //feedId 맞게 사진(ArrayList<String> 객체의 주소값) 넣어준다.
             FeedCommentGetRes feedCommentGetRes = commentHashMap.get(res.getFeedId());
 
             if(feedCommentGetRes == null) { //댓글이 null인지 체크
@@ -191,7 +187,7 @@ public class FeedService {
                 feedCommentGetRes.setMoreComment(true);
                 feedCommentGetRes.getCommentList().remove(feedCommentGetRes.getCommentList().size() - 1); //마지막 하나 지우는과정
             }
-            res.setComment(feedCommentGetRes);
+            res.setComment(feedCommentGetRes);//더보기와 commentList
         }
         log.info("list: {}", list);
         return list;

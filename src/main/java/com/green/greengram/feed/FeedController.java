@@ -34,9 +34,8 @@ public class FeedController {
     @GetMapping
     @Operation(summary = "피드 리스트", description = "signed_user_id는 로그인한 사용자의 pk")
     public ResultResponse<List<FeedGetRes>> getFeedList(@ParameterObject @ModelAttribute FeedGetReq p) {
-        log.info("FeedController > getFeedList > p: {}", p); //파라미터의 값을 찍어보자. 지금은 이런거 꼭 찍어보자
+        log.info("FeedController > getFeedList > p: {}", p);
         List<FeedGetRes> list = service.getFeedList3(p);
-        //List<FeedGetRes> list = new ArrayList<>();
         return ResultResponse.<List<FeedGetRes>>builder()
                 .resultMessage(String.format("%d rows", list.size()))//피드 갯수
                 .resultData(list)

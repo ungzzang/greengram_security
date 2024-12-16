@@ -1,5 +1,5 @@
-[2024-12-02 11:44:33 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:44:33 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:44:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:44:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:44:33 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 11:44:33 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 11:44:34 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -13,7 +13,7 @@
 [2024-12-02 11:44:35 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:44:35 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:44:35 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:44:35 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.946 seconds (process running for 2.402)
+[2024-12-02 11:44:35 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.946 seconds (process running for 2.402)
 [2024-12-02 11:44:44 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 11:44:44 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 11:44:44 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
@@ -779,8 +779,8 @@
 [2024-12-02 11:45:52 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:45:52 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 11:45:52 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:45:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 11:45:52 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:45:52 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -792,12 +792,12 @@
 [2024-12-02 11:45:52 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:45:52 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:45:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.362 seconds (process running for 79.722)
+[2024-12-02 11:45:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.362 seconds (process running for 79.722)
 [2024-12-02 11:45:52 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 11:48:17 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
 [2024-12-02 11:48:17 INFO Thread-7] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 11:48:17 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:48:17 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:48:17 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:48:17 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:48:18 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 11:48:18 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:48:18 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -809,12 +809,12 @@
 [2024-12-02 11:48:18 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:48:18 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:48:18 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:48:18 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.324 seconds (process running for 225.276)
+[2024-12-02 11:48:18 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.324 seconds (process running for 225.276)
 [2024-12-02 11:48:18 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 11:49:57 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 28 class path changes (0 additions, 0 deletions, 28 modifications)
 [2024-12-02 11:49:57 INFO Thread-11] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:49:57 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 11:49:57 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:49:57 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -826,12 +826,12 @@
 [2024-12-02 11:49:57 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:49:57 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:49:57 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.307 seconds (process running for 324.54)
+[2024-12-02 11:49:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.307 seconds (process running for 324.54)
 [2024-12-02 11:49:57 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 11:51:46 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 28 class path changes (0 additions, 0 deletions, 28 modifications)
 [2024-12-02 11:51:46 INFO Thread-15] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 2796 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:51:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 11:51:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:51:46 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -843,10 +843,10 @@
 [2024-12-02 11:51:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:51:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:51:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.303 seconds (process running for 433.985)
+[2024-12-02 11:51:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.303 seconds (process running for 433.985)
 [2024-12-02 11:51:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
-[2024-12-02 11:53:23 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 11:53:23 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 11:53:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 11:53:23 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 11:53:23 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 11:53:23 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 11:53:23 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -860,11 +860,11 @@
 [2024-12-02 11:53:24 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 11:53:24 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 11:53:24 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 11:53:24 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.633 seconds (process running for 1.995)
+[2024-12-02 11:53:24 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.633 seconds (process running for 1.995)
 [2024-12-02 12:07:55 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 4 class path changes (0 additions, 4 deletions, 0 modifications)
 [2024-12-02 12:07:55 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 12:07:55 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:07:55 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:07:55 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:07:55 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:07:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 12:07:56 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:07:56 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -876,12 +876,12 @@
 [2024-12-02 12:07:56 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:07:56 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:07:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:07:56 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.393 seconds (process running for 873.693)
+[2024-12-02 12:07:56 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.393 seconds (process running for 873.693)
 [2024-12-02 12:07:56 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 12:07:57 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 4 class path changes (4 additions, 0 deletions, 0 modifications)
 [2024-12-02 12:07:57 INFO Thread-7] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 12:07:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:07:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:07:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 6732 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:07:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:07:57 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 12:07:57 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:07:57 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -893,10 +893,10 @@
 [2024-12-02 12:07:58 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:07:58 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:07:58 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:07:58 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.336 seconds (process running for 875.522)
+[2024-12-02 12:07:58 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.336 seconds (process running for 875.522)
 [2024-12-02 12:07:58 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
-[2024-12-02 12:08:29 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 11980 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:08:29 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:08:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 11980 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:08:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:08:29 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 12:08:29 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 12:08:30 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -910,7 +910,7 @@
 [2024-12-02 12:08:30 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:08:30 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:08:30 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:08:30 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.641 seconds (process running for 2.001)
+[2024-12-02 12:08:30 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.641 seconds (process running for 2.001)
 [2024-12-02 12:08:36 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 12:08:36 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 12:08:36 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
@@ -1159,8 +1159,8 @@
  {executed in 2 msec}
 [2024-12-02 12:10:35 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 12:10:35 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 12:10:37 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 11784 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:10:37 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:10:37 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 11784 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:10:37 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:10:37 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 12:10:37 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 12:10:38 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -1174,9 +1174,9 @@
 [2024-12-02 12:10:38 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:10:38 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:10:38 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:10:38 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.629 seconds (process running for 1.993)
-[2024-12-02 12:11:09 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10364 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:11:09 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:10:38 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.629 seconds (process running for 1.993)
+[2024-12-02 12:11:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10364 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:11:09 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:11:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 12:11:09 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 12:11:10 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -1190,9 +1190,9 @@
 [2024-12-02 12:11:11 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:11:11 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:11:11 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:11:11 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.645 seconds (process running for 2.007)
-[2024-12-02 12:12:13 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 12012 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:12:13 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:11:11 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.645 seconds (process running for 2.007)
+[2024-12-02 12:12:13 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 12012 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:12:13 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:12:13 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 12:12:13 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 12:12:14 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -1206,7 +1206,7 @@
 [2024-12-02 12:12:15 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:12:15 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:12:15 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:12:15 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.639 seconds (process running for 2.008)
+[2024-12-02 12:12:15 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.639 seconds (process running for 2.008)
 [2024-12-02 12:12:20 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 12:12:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 12:12:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
@@ -2172,8 +2172,8 @@ java.sql.SQLSyntaxErrorException: (conn=24) Table 'greengram_ver2.feed_comment' 
 	at java.base/java.lang.Thread.run(Thread.java:840)
 [2024-12-02 12:14:54 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 12:14:54 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 12:14:55 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:14:55 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:14:55 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:14:55 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:14:55 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 12:14:55 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 12:14:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -2187,7 +2187,7 @@ java.sql.SQLSyntaxErrorException: (conn=24) Table 'greengram_ver2.feed_comment' 
 [2024-12-02 12:14:57 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:14:57 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:14:57 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:14:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.631 seconds (process running for 2.0)
+[2024-12-02 12:14:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.631 seconds (process running for 2.0)
 [2024-12-02 12:15:00 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 12:15:00 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 12:15:00 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
@@ -3327,8 +3327,8 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 12:40:46 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:40:46 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 12:40:46 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:40:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 12:40:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:40:46 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3340,12 +3340,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 12:40:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:40:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:40:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.39 seconds (process running for 1551.367)
+[2024-12-02 12:40:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.39 seconds (process running for 1551.367)
 [2024-12-02 12:40:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 12:45:56 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
 [2024-12-02 12:45:56 INFO Thread-7] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 12:45:56 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:45:56 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:45:56 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:45:56 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:45:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 12:45:56 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:45:56 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3357,12 +3357,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 12:45:57 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:45:57 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:45:57 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:45:57 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.336 seconds (process running for 1861.919)
+[2024-12-02 12:45:57 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.336 seconds (process running for 1861.919)
 [2024-12-02 12:45:57 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 12:59:52 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
 [2024-12-02 12:59:52 INFO Thread-11] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 12:59:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 12:59:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 12:59:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 12:59:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 12:59:53 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 12:59:53 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:59:53 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3374,12 +3374,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 12:59:53 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 12:59:53 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 12:59:53 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 12:59:53 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.323 seconds (process running for 2698.019)
+[2024-12-02 12:59:53 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.323 seconds (process running for 2698.019)
 [2024-12-02 12:59:53 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 13:00:53 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 13:00:53 INFO Thread-15] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 13:00:53 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 13:00:53 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 13:00:53 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3391,12 +3391,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 13:00:53 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 13:00:53 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 13:00:53 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.307 seconds (process running for 2758.497)
+[2024-12-02 13:00:53 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.307 seconds (process running for 2758.497)
 [2024-12-02 13:00:53 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:03:21 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 2 class path changes (1 addition, 0 deletions, 1 modification)
 [2024-12-02 14:03:21 INFO Thread-19] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:03:22 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:03:22 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:03:22 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3408,12 +3408,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:03:22 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:03:22 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:03:22 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.332 seconds (process running for 6507.119)
+[2024-12-02 14:03:22 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.332 seconds (process running for 6507.119)
 [2024-12-02 14:03:22 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:31:28 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:31:28 INFO Thread-23] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:31:28 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:31:28 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:31:28 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:31:28 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:31:29 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:31:29 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:31:29 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3425,12 +3425,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:31:29 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:31:29 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:31:29 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:31:29 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.327 seconds (process running for 8194.045)
+[2024-12-02 14:31:29 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.327 seconds (process running for 8194.045)
 [2024-12-02 14:31:29 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:33:51 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:33:51 INFO Thread-27] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:33:51 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:33:51 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:33:51 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:33:51 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:33:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:33:52 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:33:52 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3442,12 +3442,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:33:52 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:33:52 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:33:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:33:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.297 seconds (process running for 8337.011)
+[2024-12-02 14:33:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.297 seconds (process running for 8337.011)
 [2024-12-02 14:33:52 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:41:03 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:41:03 INFO Thread-31] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:41:04 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:41:04 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:41:04 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3459,12 +3459,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:41:04 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:41:04 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:41:04 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.296 seconds (process running for 8769.095)
+[2024-12-02 14:41:04 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.296 seconds (process running for 8769.095)
 [2024-12-02 14:41:04 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:43:33 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:43:33 INFO Thread-35] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:43:33 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:43:33 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:43:33 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3476,12 +3476,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:43:33 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:43:33 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:43:33 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.3 seconds (process running for 8918.17)
+[2024-12-02 14:43:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.3 seconds (process running for 8918.17)
 [2024-12-02 14:43:33 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:50:14 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:50:14 INFO Thread-39] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:50:14 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:50:14 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:50:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:50:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:50:15 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:50:15 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:50:15 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3493,12 +3493,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:50:15 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:50:15 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:50:15 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:50:15 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.366 seconds (process running for 9320.07)
+[2024-12-02 14:50:15 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.366 seconds (process running for 9320.07)
 [2024-12-02 14:50:15 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 14:55:42 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
 [2024-12-02 14:55:42 INFO Thread-43] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 14:55:42 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 14:55:42 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:55:42 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3510,12 +3510,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 14:55:42 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 14:55:42 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 14:55:42 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.332 seconds (process running for 9647.733)
+[2024-12-02 14:55:42 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.332 seconds (process running for 9647.733)
 [2024-12-02 14:55:42 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 15:01:45 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 6 class path changes (1 addition, 0 deletions, 5 modifications)
 [2024-12-02 15:01:45 INFO Thread-47] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 15:01:45 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:01:45 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:01:45 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:01:45 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:01:45 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 15:01:45 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:01:45 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3527,12 +3527,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:01:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:01:46 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:01:46 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:01:46 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.327 seconds (process running for 10010.891)
+[2024-12-02 15:01:46 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.327 seconds (process running for 10010.891)
 [2024-12-02 15:01:46 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 15:06:01 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
 [2024-12-02 15:06:01 INFO Thread-51] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:06:02 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 15:06:02 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:06:02 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3544,12 +3544,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:06:02 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:06:02 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:06:02 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.299 seconds (process running for 10267.108)
+[2024-12-02 15:06:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.299 seconds (process running for 10267.108)
 [2024-12-02 15:06:02 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 15:23:05 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
 [2024-12-02 15:23:05 INFO Thread-55] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:23:05 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 15:23:05 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:23:05 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3561,12 +3561,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:23:05 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:23:05 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:23:05 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.325 seconds (process running for 11290.739)
+[2024-12-02 15:23:05 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.325 seconds (process running for 11290.739)
 [2024-12-02 15:23:05 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 15:29:41 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
 [2024-12-02 15:29:41 INFO Thread-59] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:29:41 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 15:29:41 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:29:41 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3578,12 +3578,12 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:29:41 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:29:41 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:29:41 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.342 seconds (process running for 11686.226)
+[2024-12-02 15:29:41 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.342 seconds (process running for 11686.226)
 [2024-12-02 15:29:41 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
 [2024-12-02 15:38:14 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
 [2024-12-02 15:38:14 INFO Thread-63] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10532 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:38:14 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
 [2024-12-02 15:38:14 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:38:14 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
@@ -3595,10 +3595,10 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:38:14 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:38:14 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:38:14 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 0.3 seconds (process running for 12199.61)
+[2024-12-02 15:38:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 0.3 seconds (process running for 12199.61)
 [2024-12-02 15:38:14 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
-[2024-12-02 15:50:02 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 12100 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:50:02 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:50:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 12100 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:50:02 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:50:02 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 15:50:02 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 15:50:03 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -3612,7 +3612,7 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 15:50:03 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:50:03 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:50:03 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:50:03 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.642 seconds (process running for 2.005)
+[2024-12-02 15:50:03 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.642 seconds (process running for 2.005)
 [2024-12-02 15:50:10 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 15:50:10 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 15:50:10 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
@@ -4925,8 +4925,8 @@ java.sql.SQLSyntaxErrorException: (conn=44) You have an error in your SQL syntax
 	at java.base/java.lang.Thread.run(Thread.java:840)
 [2024-12-02 15:57:49 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 15:57:49 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 15:57:51 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 10896 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 15:57:51 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 15:57:51 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 10896 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 15:57:51 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 15:57:51 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 15:57:51 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 15:57:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -4940,7 +4940,7 @@ java.sql.SQLSyntaxErrorException: (conn=44) You have an error in your SQL syntax
 [2024-12-02 15:57:52 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 15:57:52 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 15:57:52 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 15:57:52 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.67 seconds (process running for 2.073)
+[2024-12-02 15:57:52 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.67 seconds (process running for 2.073)
 [2024-12-02 15:57:56 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 15:57:56 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 15:57:56 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
@@ -5207,8 +5207,8 @@ java.sql.SQLSyntaxErrorException: (conn=54) You have an error in your SQL syntax
 	at java.base/java.lang.Thread.run(Thread.java:840)
 [2024-12-02 16:01:25 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 16:01:25 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 16:11:15 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 156 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 16:11:15 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 16:11:15 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 156 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 16:11:15 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 16:11:15 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 16:11:15 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 16:11:16 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -5222,7 +5222,7 @@ java.sql.SQLSyntaxErrorException: (conn=54) You have an error in your SQL syntax
 [2024-12-02 16:11:17 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 16:11:17 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 16:11:17 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 16:11:17 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.666 seconds (process running for 2.061)
+[2024-12-02 16:11:17 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.666 seconds (process running for 2.061)
 [2024-12-02 16:11:56 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 16:11:56 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 16:11:56 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
@@ -6220,8 +6220,8 @@ java.sql.SQLSyntaxErrorException: (conn=54) You have an error in your SQL syntax
 
 [2024-12-02 16:23:55 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 16:23:55 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 16:23:58 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 13188 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 16:23:58 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 16:23:58 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 13188 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 16:23:58 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 16:23:58 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 16:23:58 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 16:23:58 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -6235,7 +6235,7 @@ java.sql.SQLSyntaxErrorException: (conn=54) You have an error in your SQL syntax
 [2024-12-02 16:23:59 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 16:23:59 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 16:23:59 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 16:23:59 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.88 seconds (process running for 2.268)
+[2024-12-02 16:23:59 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.88 seconds (process running for 2.268)
 [2024-12-02 16:24:03 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 16:24:03 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 16:24:03 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
@@ -8634,8 +8634,8 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 16:46:45 WARN http-nio-8080-exec-2] [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PROPFIND' is not supported]
 [2024-12-02 16:53:03 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
 [2024-12-02 16:53:03 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
-[2024-12-02 16:54:19 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Starting GreenGramVer2Application using Java 17.0.13 with PID 11880 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
-[2024-12-02 16:54:19 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] No active profile set, falling back to 1 default profile: "default"
+[2024-12-02 16:54:19 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramVer2Application using Java 17.0.13 with PID 11880 (D:\jju\GreenGramVer2\build\classes\java\main started by Administrator in D:\jju\GreenGramVer2)
+[2024-12-02 16:54:19 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
 [2024-12-02 16:54:19 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
 [2024-12-02 16:54:19 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
 [2024-12-02 16:54:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
@@ -8649,7 +8649,7 @@ java.lang.IllegalArgumentException: Invalid character found in the HTTP protocol
 [2024-12-02 16:54:20 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
 [2024-12-02 16:54:20 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
 [2024-12-02 16:54:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-02 16:54:20 INFO restartedMain] [com.green.greengram.GreenGramVer2Application] Started GreenGramVer2Application in 1.707 seconds (process running for 2.093)
+[2024-12-02 16:54:20 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramVer2Application in 1.707 seconds (process running for 2.093)
 [2024-12-02 16:54:39 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
 [2024-12-02 16:54:39 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
 [2024-12-02 16:54:39 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms

@@ -6,6 +6,11 @@ const:
 file:
   directory: D:/mydownload/greengram_ver3
 
+jwt:
+  issuer: green@green.kr
+  secret-key: study-springboot
+
+
 
 
 # mybatis setting

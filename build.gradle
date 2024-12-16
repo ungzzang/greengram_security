@@ -24,6 +24,10 @@ repositories {
 }
 
 dependencies {
+    // json web token 추가
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api
+    implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+
     // log4jdbc 라이브러리 추가, Persistence Query문 / 결과값 확인
     // https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
     implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
@@ -37,12 +41,14 @@ dependencies {
     implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0'
 
     implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-security' //추가
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
     compileOnly 'org.projectlombok:lombok' //compileOnly - 컴파일 할때 압축파일을 빼버린다.(서버 내렸다 올리는거 컴파일) 컴파일때 라이브러리는 필요없어서. 무겁다. //jar 버전으로
     developmentOnly 'org.springframework.boot:spring-boot-devtools' //컴파일할때도 안쓴다. 가볍다. 개발할때 쓰는거
     runtimeOnly 'org.mariadb.jdbc:mariadb-java-client' //실행할때 사용하는거, 빌드 때는 포함 안하고(자바때는 없다) 런타임 필요한 경우에만 라이브러리 프로젝트에 포함됨.
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'// yaml에 있는 데이터 객체로 가져올수 있다.
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
