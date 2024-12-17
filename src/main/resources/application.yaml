@@ -2,13 +2,13 @@ const:
   default-page-size : 20
 
 
-# custom property (???? Absolute Path)
+# custom property (절대 경로 Absolute Path)
 file:
   directory: D:/mydownload/greengram_ver3
 
 jwt:
   issuer: green@green.kr
-  secret-key: study-springboot
+  secret-key: studyspringbootabcdefghijklmnopqrstuvwxyzaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
 
@@ -41,7 +41,7 @@ springdoc:
     display-request-duration:  true
     operations-sorter: method
     path: /swagger
-    groups-order: asc # 정렬(????? ???? ???? ??? ??? ?? ????)
+    groups-order: asc # 정렬
     tags-sorter:  alpha # 태그별로 저장하겠다. abcd
 
   cache:

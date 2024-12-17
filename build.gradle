@@ -25,8 +25,8 @@ repositories {
 
 dependencies {
     // json web token 추가
-    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt-api
-    implementation 'io.jsonwebtoken:jjwt-api:0.12.6'
+    // https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+    implementation 'io.jsonwebtoken:jjwt:0.12.6'
 
     // log4jdbc 라이브러리 추가, Persistence Query문 / 결과값 확인
     // https://mvnrepository.com/artifact/org.bgee.log4jdbc-log4j2/log4jdbc-log4j2-jdbc4.1
@@ -56,4 +56,5 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+    jvmArgs "-Xshare:off"
 }
