@@ -4,13 +4,12 @@ package com.green.greengram.config.security;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityCustomizer;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
-import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+
 
 @Configuration //빈등록도 함, 메소드 빈등록이 있어야 의미가 있다.(없으면 그냥 빈등록), 메소드 빈등록이 싱글톤이 됨.
 @RequiredArgsConstructor
@@ -23,6 +22,7 @@ public class WebSecurityConfig {
                         .requestMatchers(new AntPathRequestMatcher("/static/**")); //static이하는 시큐리티 관여안하겠다.
     }*/ //작동안되서 껐음.
 
+
     @Bean //스프링이 메소드 호출을 하고 리턴할 객체의 주소값을 관리한다. (빈등록)
     // http는 빈등록 되어있을꺼다.
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
@@ -31,9 +31,17 @@ public class WebSecurityConfig {
                 .formLogin(form -> form.disable()) //SSR(Server Side Rendering)이 아니다. 폼로그인 기능 자체를 비활성화
                 .csrf(csrf -> csrf.disable()) //SSR(Server Side Rendering)이 아니다. 보안관련 SSR 이 아니면 보안이슈가 없기 때문에 기능을 끈다.
                 .authorizeHttpRequests(req ->
-                        req.requestMatchers("/api/feed", "/api/feed/ver3", "/api/").authenticated()
-                            .anyRequest().permitAll() //나머지는 모두 허용
+                        req.requestMatchers("/api/feed", "/api/feed/**").authenticated() //로그인이 되어 있어야만 사용
+                                .requestMatchers(HttpMethod.GET,"/api/user").authenticated()
+                                .requestMatchers(HttpMethod.PATCH,"/api/user/pic").authenticated()
+                                .anyRequest().permitAll() //나머지 요청은 모두 허용
                 )
                 .build();
+    }
+
+
+    @Bean
+    public BCryptPasswordEncoder passwordEncoder() {
+        return new BCryptPasswordEncoder();
     }
 }

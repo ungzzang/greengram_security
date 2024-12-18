@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.green.greengram.config.security.MyUserDetails;
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
@@ -34,9 +35,16 @@ public class TokenProvider {//JWT담당
     public String generateToken(JwtUser jwtUser, Duration expiredAt) {
         Date now = new Date(); //현재시간
         return makeToken(jwtUser, new Date(now.getTime() + expiredAt.toMillis()));//만료시간세팅
-    }
+    } //new Date() - 파라미터 없으면 현재시간, 있으면 그 값대로.
 
-    private String makeToken(JwtUser jwtUser, Date expiry){
+    private String makeToken(JwtUser jwtUser, Date expiry){ //expiry - 만료일시
+
+        JwtBuilder builder = Jwts.builder();
+        JwtBuilder.BuilderHeader header = builder.header();
+        header.type("JWT");
+
+        builder.issuer(jwtProperties.getIssuer());
+
         //JWT 암호화
         return Jwts.builder()
                 .header().type("JWT")
@@ -69,6 +77,7 @@ public class TokenProvider {//JWT담당
         }
     }
 
+    //Spring Security에서 인증 처리를 해주어야 한다. 그때 Authentication 객체가 필요.
     //userDetails.getAuthorities() - 권한 뭐 들고 있는지
     public Authentication getAuthentication(String token){
         UserDetails userDetails = getUserDetailsFromToken(token); //디버깅했음

@@ -1,18 +1,27 @@
 package com.green.greengram.user;
 
+import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.MyFileUtils;
+import com.green.greengram.config.jwt.JwtUser;
+import com.green.greengram.config.jwt.TokenProvider;
 import com.green.greengram.user.follow.model.UserPicPatchReq;
 import com.green.greengram.user.model.*;
+
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.mindrot.jbcrypt.BCrypt;
-import org.springdoc.core.converters.FileSupportConverter;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.List;
+import java.time.Duration;
+import java.util.ArrayList;
 
 @Slf4j
 @Service
@@ -20,12 +29,15 @@ import java.util.List;
 public class UserService {
     private final UserMapper mapper;
     private final MyFileUtils myFileUtils;
-    private final FileSupportConverter fileSupportConverter;
+    private final PasswordEncoder passwordEncoder;
+    private final TokenProvider tokenProvider;
+    private final CookieUtils cookieUtils;
 
     public int signUp(MultipartFile pic, UserSignUpReq p){
         String savedPicName = (pic != null ? myFileUtils.makeRandomFileName(pic) : null);
 
-        String hashedPassWord = BCrypt.hashpw(p.getUpw(), BCrypt.gensalt());
+        //String hashedPassWord = BCrypt.hashpw(p.getUpw(), BCrypt.gensalt());
+        String hashedPassWord = passwordEncoder.encode(p.getUpw());
 
         p.setUpw(hashedPassWord);
         p.setPic(savedPicName);
@@ -49,25 +61,52 @@ public class UserService {
         return result;
     }
 
-    public UserSignInRes signIn(UserSignInReq p){
+    public UserSignInRes signIn(UserSignInReq p, HttpServletResponse response){
         UserSignInRes res = mapper.selUserByUid(p.getUid());
 
-        if(res == null){
+        if(res == null) {
             res = new UserSignInRes();
             res.setMessage("아이디를 확인하시오");
             return res;
-        }else if(!BCrypt.checkpw(p.getUpw(), res.getUpw())){
+        }else if(!passwordEncoder.matches(p.getUpw(), res.getUpw())){ //비밀번호 다를시
+        //}else if(!BCrypt.checkpw(p.getUpw(), res.getUpw())){ //비밀번호 다를시
             res = new UserSignInRes();
             res.setMessage("비밀번호를 확인하시오");
             return res;
         }
 
+        /*
+            JWT 토큰 생성 2개 (AccessToken 20분, RefreshToken 15일)
+         */
+
+        JwtUser jwtUser = new JwtUser();
+        jwtUser.setSignedUserId(res.getUserId());
+        jwtUser.setRoles(new ArrayList<>(2));
+
+        jwtUser.getRoles().add("ROLE_USER");
+        jwtUser.getRoles().add("ROLE_ADMIN");
+
+        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(20));
+        String refreshToken = tokenProvider.generateToken(jwtUser, Duration.ofDays(15));
+
+        //refreshToken은 쿠키에 담는다.
+        int maxAge = 1_296_000; //15 * 24 * 60 * 60, 15일의 초(second)값
+        cookieUtils.setCookie(response, "refreshToken", refreshToken, maxAge);
+
         res.setMessage("로그인 성공");
+        res.setAccessToken(accessToken);
         return res;
     }
 
     public UserInfoGetRes getUserInfo(UserInfoGetReq p){
         return mapper.selUserInfo2(p);
+    }
+
+    public String getAccessToken(HttpServletRequest req){
+        Cookie cookie = cookieUtils.getCookie(req, "refreshToken");
+        String refreshToken = cookie.getValue();
+        log.info("refreshToken: {}", refreshToken);
+        return refreshToken;
     }
 
     public String patchUserPic(UserPicPatchReq p){

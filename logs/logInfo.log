@@ -1,453 +1,170 @@
-[2024-12-17 10:48:12 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 8452 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:48:12 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:48:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:48:12 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:48:13 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:48:13 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:48:13 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:48:13 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:48:13 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:48:13 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1070 ms
-[2024-12-17 10:48:13 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:48:45 WARN restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenProvider' defined in file [D:\jju\GreenGramSecurity\build\classes\java\main\com\green\greengram\config\jwt\TokenProvider.class]: Failed to instantiate [com.green.greengram.config.jwt.TokenProvider]: Constructor threw exception
-[2024-12-17 10:48:45 INFO restartedMain] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
-[2024-12-17 10:48:50 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 1656 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:48:50 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:48:50 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:48:50 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:48:51 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:48:51 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:48:51 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:48:51 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:48:51 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:48:51 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 916 ms
-[2024-12-17 10:48:51 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:48:53 WARN restartedMain] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tokenProvider' defined in file [D:\jju\GreenGramSecurity\build\classes\java\main\com\green\greengram\config\jwt\TokenProvider.class]: Failed to instantiate [com.green.greengram.config.jwt.TokenProvider]: Constructor threw exception
-[2024-12-17 10:48:53 INFO restartedMain] [org.apache.catalina.core.StandardService] Stopping service [Tomcat]
-[2024-12-17 10:50:20 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 1352 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:50:20 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:50:20 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:50:20 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:50:21 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:50:21 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:50:21 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:50:21 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:50:21 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:50:21 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 916 ms
-[2024-12-17 10:50:21 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:51:50 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 10:51:50 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+[2024-12-18 12:03:01 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 11256 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
+[2024-12-18 12:03:01 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-18 12:03:01 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-18 12:03:01 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-18 12:03:02 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-18 12:03:02 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:03:02 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-18 12:03:02 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-18 12:03:02 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-18 12:03:02 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 996 ms
+[2024-12-18 12:03:03 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
+[2024-12-18 12:03:03 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
 
-Using generated security password: c7461ff5-dca2-4202-81c9-e8aab99b84a2
+Using generated security password: 16f46923-43a1-4038-ac9b-a1f8e0443dd8
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[2024-12-17 10:51:50 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 10:51:50 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 10:51:50 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 10:51:50 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 90.228 seconds (process running for 90.656)
-[2024-12-17 10:52:21 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 10924 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:52:21 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:52:21 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:52:21 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:52:22 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:52:22 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:52:22 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:52:22 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:52:22 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:52:22 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 1158 ms
-[2024-12-17 10:52:22 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:53:55 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 10:53:55 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+[2024-12-18 12:03:03 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-18 12:03:03 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-18 12:03:03 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-18 12:03:03 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:03:03 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-18 12:03:03 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 2.301 seconds (process running for 2.746)
+[2024-12-18 12:03:09 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-18 12:03:09 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-18 12:03:09 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
+[2024-12-18 12:03:11 INFO http-nio-8080-exec-3] [org.springdoc.api.AbstractOpenApiResource] Init duration for springdoc-openapi is: 217 ms
+[2024-12-18 12:03:39 INFO http-nio-8080-exec-7] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-18 12:03:39 INFO http-nio-8080-exec-7] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@1035a202
+[2024-12-18 12:03:39 INFO http-nio-8080-exec-7] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-18 12:03:39 DEBUGhttp-nio-8080-exec-7] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id as userId
+             , IFNULL(nick_name, uid) as nickName 
+             , upw, pic
+          FROM user
+         WHERE uid = 'string'
+ {executed in 8 msec}
+[2024-12-18 12:03:39 INFO http-nio-8080-exec-7] [jdbc.resultsettable] 
+|--------|---------|----|----|
+|user_id |nickname |upw |pic |
+|--------|---------|----|----|
+|--------|---------|----|----|
 
-Using generated security password: 1cdd2161-90a4-49e5-a4a6-e7c0bb073cdc
+[2024-12-18 12:03:56 DEBUGhttp-nio-8080-exec-10] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id as userId
+             , IFNULL(nick_name, uid) as nickName 
+             , upw, pic
+          FROM user
+         WHERE uid = '123'
+ {executed in 1 msec}
+[2024-12-18 12:03:56 INFO http-nio-8080-exec-10] [jdbc.resultsettable] 
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|user_id |nickname |upw                                                          |pic                                      |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|1       |123      |$2a$10$QHlpSAdmPSj6e9fC2GBASOnxdg.lQw5bW5Mkx8554Cxc4/O1QFLkO |453a0f90-09a3-4c24-a4b4-c1684e59bbf2.jpg |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
 
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[2024-12-18 12:12:11 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-18 12:12:11 INFO SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-18 12:12:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 9388 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
+[2024-12-18 12:12:14 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-18 12:12:14 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-18 12:12:14 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-18 12:12:14 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-18 12:12:14 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:12:14 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-18 12:12:14 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-18 12:12:14 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-18 12:12:14 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 926 ms
+[2024-12-18 12:12:15 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
+[2024-12-18 12:12:15 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
 
-[2024-12-17 10:53:55 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 10:53:55 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 10:53:56 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 10:53:56 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 94.909 seconds (process running for 95.349)
-[2024-12-17 10:54:18 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 11108 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:54:18 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:54:18 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:54:18 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:54:19 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:54:19 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:54:19 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:54:19 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:54:19 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:54:19 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 920 ms
-[2024-12-17 10:54:19 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:54:59 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 10:54:59 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 8c7d9ff6-8f84-4432-af03-4237f5b583f9
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 10:54:59 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 10:54:59 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 10:54:59 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 10:54:59 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 42.018 seconds (process running for 42.446)
-[2024-12-17 10:55:31 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 2984 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:55:31 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:55:31 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:55:31 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:55:32 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:55:32 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:55:32 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:55:32 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:55:32 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:55:32 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 897 ms
-[2024-12-17 10:55:32 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:56:39 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 10:56:40 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: c545e424-fd3a-4c08-8adb-3d8a899923d7
+Using generated security password: 0d3b8def-d8c3-4041-a473-ba0ff092b9aa
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[2024-12-17 10:56:40 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 10:56:40 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 10:56:40 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 10:56:40 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 69.346 seconds (process running for 69.781)
-[2024-12-17 10:57:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 3540 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 10:57:33 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 10:57:33 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 10:57:33 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 10:57:34 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 10:57:34 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 10:57:34 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 10:57:34 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 10:57:34 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 10:57:34 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 899 ms
-[2024-12-17 10:57:34 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 10:58:36 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 10:58:36 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+[2024-12-18 12:12:15 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-18 12:12:15 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-18 12:12:15 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-18 12:12:15 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:12:15 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-18 12:12:15 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.937 seconds (process running for 2.305)
+[2024-12-18 12:12:20 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-12-18 12:12:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+[2024-12-18 12:12:20 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 2 ms
+[2024-12-18 12:12:20 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Starting...
+[2024-12-18 12:12:21 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.pool.HikariPool] HikariPool-1 - Added connection net.sf.log4jdbc.sql.jdbcapi.ConnectionSpy@7d525375
+[2024-12-18 12:12:21 INFO http-nio-8080-exec-1] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Start completed.
+[2024-12-18 12:12:21 DEBUGhttp-nio-8080-exec-1] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id as userId
+             , IFNULL(nick_name, uid) as nickName 
+             , upw, pic
+          FROM user
+         WHERE uid = '123'
+ {executed in 0 msec}
+[2024-12-18 12:12:21 INFO http-nio-8080-exec-1] [jdbc.resultsettable] 
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|user_id |nickname |upw                                                          |pic                                      |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|1       |123      |$2a$10$QHlpSAdmPSj6e9fC2GBASOnxdg.lQw5bW5Mkx8554Cxc4/O1QFLkO |453a0f90-09a3-4c24-a4b4-c1684e59bbf2.jpg |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
 
-Using generated security password: 59c2b7ab-0167-4b94-a82a-5b5dc3b81aa3
+[2024-12-18 12:13:49 INFO http-nio-8080-exec-4] [org.springdoc.api.AbstractOpenApiResource] Init duration for springdoc-openapi is: 186 ms
+[2024-12-18 12:14:08 INFO http-nio-8080-exec-3] [com.green.greengram.user.UserService] refreshToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzM4NCJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDQ5MTU0MSwiZXhwIjoxNzM1Nzg3NTQxLCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MSxcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.k3AeCJmRJS7QYSQLMVk7bUN1qFBIpbbKKhrmmzGhFsWBF5sEjhmA1GOitkqTgBmh
+[2024-12-18 12:15:07 INFO http-nio-8080-exec-9] [com.green.greengram.user.UserService] refreshToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzM4NCJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDQ5MTU0MSwiZXhwIjoxNzM1Nzg3NTQxLCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MSxcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.k3AeCJmRJS7QYSQLMVk7bUN1qFBIpbbKKhrmmzGhFsWBF5sEjhmA1GOitkqTgBmh
+[2024-12-18 12:15:25 DEBUGhttp-nio-8080-exec-7] [jdbc.sqltiming]  com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+1. SELECT user_id as userId
+             , IFNULL(nick_name, uid) as nickName 
+             , upw, pic
+          FROM user
+         WHERE uid = '123'
+ {executed in 0 msec}
+[2024-12-18 12:15:25 INFO http-nio-8080-exec-7] [jdbc.resultsettable] 
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|user_id |nickname |upw                                                          |pic                                      |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
+|1       |123      |$2a$10$QHlpSAdmPSj6e9fC2GBASOnxdg.lQw5bW5Mkx8554Cxc4/O1QFLkO |453a0f90-09a3-4c24-a4b4-c1684e59bbf2.jpg |
+|--------|---------|-------------------------------------------------------------|-----------------------------------------|
 
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
+[2024-12-18 12:15:31 INFO http-nio-8080-exec-10] [com.green.greengram.user.UserService] refreshToken: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzM4NCJ9.eyJpc3MiOiJncmVlbkBncmVlbi5rciIsImlhdCI6MTczNDQ5MTcyNSwiZXhwIjoxNzM1Nzg3NzI1LCJzaWduZWRVc2VyIjoie1wic2lnbmVkVXNlcklkXCI6MSxcInJvbGVzXCI6W1wiUk9MRV9VU0VSXCIsXCJST0xFX0FETUlOXCJdfSJ9.rahFKX2aJI9WNocVgm_KOcoxMHoDE0kv2whJwiNi17L64hIydU-B5wnBmmqWeBI5
+[2024-12-18 12:17:44 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+[2024-12-18 12:17:44 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:17:44 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown initiated...
+[2024-12-18 12:17:44 INFO Thread-5] [com.zaxxer.hikari.HikariDataSource] HikariPool-1 - Shutdown completed.
+[2024-12-18 12:17:44 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 9388 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
+[2024-12-18 12:17:44 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-18 12:17:44 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-18 12:17:44 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:17:44 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-18 12:17:44 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-18 12:17:44 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-18 12:17:44 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 224 ms
+[2024-12-18 12:17:44 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
+[2024-12-18 12:17:45 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
 
-[2024-12-17 10:58:36 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 10:58:36 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 10:58:36 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 10:58:36 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 63.458 seconds (process running for 63.931)
-[2024-12-17 11:10:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 5904 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:10:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:10:14 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:10:15 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:10:15 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 058aa7d0-e5ec-48e6-a8a7-99af54315e7b
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:10:15 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:10:15 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.875 seconds (process running for 2.748)
-[2024-12-17 11:11:40 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 9708 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:11:40 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:11:40 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:11:41 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:11:41 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: fa2578d4-5511-4afd-b8f9-692eb0f972f3
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:11:41 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:11:41 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.891 seconds (process running for 2.726)
-[2024-12-17 11:12:06 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 6012 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:12:06 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:12:07 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:12:08 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:12:08 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 56c73c84-d679-49f7-a1d1-b16d60e98f08
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:12:08 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:12:08 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.924 seconds (process running for 2.769)
-[2024-12-17 11:12:58 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 4408 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:12:58 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:12:59 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:12:59 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:12:59 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 998753cc-4c5f-45e6-9160-6964b661fbdb
+Using generated security password: 447a6190-bd7b-485f-b45f-ce61b410a617
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[2024-12-17 11:12:59 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:12:59 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.831 seconds (process running for 2.663)
-[2024-12-17 11:16:07 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 11640 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:16:07 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:16:08 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:16:08 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:16:08 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
+[2024-12-18 12:17:45 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-18 12:17:45 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-18 12:17:45 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-18 12:17:45 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:17:45 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-18 12:17:45 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.433 seconds (process running for 331.782)
+[2024-12-18 12:17:45 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-18 12:53:29 INFO SpringApplicationShutdownHook] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:53:30 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 972 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
+[2024-12-18 12:53:30 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
+[2024-12-18 12:53:30 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-12-18 12:53:30 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-12-18 12:53:31 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
+[2024-12-18 12:53:31 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:53:31 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
+[2024-12-18 12:53:31 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
+[2024-12-18 12:53:31 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
+[2024-12-18 12:53:31 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 882 ms
+[2024-12-18 12:53:31 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
+[2024-12-18 12:53:32 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
 
-Using generated security password: d16406f5-2b22-4551-95dd-ca92c92c62ce
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:16:08 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:16:08 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.822 seconds (process running for 2.621)
-[2024-12-17 11:17:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 11968 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:17:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:17:14 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:17:15 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:17:15 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 4e2a38ef-6ee9-4126-9874-193cacc00d7d
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:17:15 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:17:15 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.817 seconds (process running for 2.66)
-[2024-12-17 11:20:02 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 1096 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:20:02 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:20:03 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:20:04 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:20:04 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 8bbd3962-0a1f-4e56-81e0-90ecd8411ca3
+Using generated security password: 9478649d-c828-496b-80fc-a1693608d0bc
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-[2024-12-17 11:20:04 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:20:04 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.852 seconds (process running for 2.717)
-[2024-12-17 11:26:24 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 1088 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:26:24 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:26:25 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:26:26 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:26:26 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 3f2e730d-ea58-462c-9e0a-8b0ca313cffd
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:26:26 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:26:26 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.859 seconds (process running for 2.782)
-[2024-12-17 11:36:25 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 5544 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:36:25 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:36:26 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:36:26 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:36:26 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: f2b37814-ffb3-4838-97e6-0f94516a5897
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:36:26 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:36:26 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.877 seconds (process running for 2.763)
-[2024-12-17 11:37:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 3612 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:37:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:37:46 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:37:47 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:37:47 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 3d9aaf46-30e8-4dfc-a29d-159107f2d3e4
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:37:47 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:37:47 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.022 seconds (process running for 3.022)
-[2024-12-17 11:53:05 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 6844 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:53:05 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:53:06 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:53:06 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:53:07 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 94411a0d-064e-4361-8777-81ed72561cbb
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:53:07 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:53:07 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.088 seconds (process running for 3.122)
-[2024-12-17 11:54:29 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 9132 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:54:29 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:54:30 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:54:30 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:54:31 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 8b0b74b2-b6ca-4c43-84a9-5003c33e57f4
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:54:31 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:54:31 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.08 seconds (process running for 3.095)
-[2024-12-17 11:54:55 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 4624 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:54:55 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:54:56 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:54:56 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:54:56 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 79c9be87-6738-4684-8c8f-86586e425e67
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:54:56 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:54:57 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.093 seconds (process running for 3.113)
-[2024-12-17 11:58:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 11576 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:58:14 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:58:15 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:58:15 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:58:16 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 276b7d28-7028-4b16-8c3d-c54f8e799bdb
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:58:16 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:58:16 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.062 seconds (process running for 3.092)
-[2024-12-17 11:59:07 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 6592 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 11:59:07 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 11:59:08 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 11:59:09 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 11:59:09 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 794327d4-f7e2-4349-97cc-9280cb2284b5
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 11:59:09 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 11:59:09 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.012 seconds (process running for 2.998)
-[2024-12-17 12:01:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 5720 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 12:01:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 12:01:47 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 12:01:47 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 12:01:47 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: e140fa17-9424-4567-84b0-59ab93e99268
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 12:01:47 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 12:01:48 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.024 seconds (process running for 3.008)
-[2024-12-17 12:03:52 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 5224 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 12:03:52 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 12:03:52 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 12:03:53 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 12:03:53 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: c38660e9-ade0-4665-8f01-e821dd35917e
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 12:03:53 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 12:03:53 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.079 seconds (process running for 3.084)
-[2024-12-17 12:07:26 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 10616 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 12:07:26 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 12:07:27 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 12:07:27 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 12:07:27 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 7006b665-4080-4360-a14e-0293cacf37fc
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 12:07:27 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 12:07:28 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.987 seconds (process running for 2.989)
-[2024-12-17 12:07:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 11724 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 12:07:46 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 12:07:47 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 12:07:48 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 12:07:48 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 6171ba41-616e-4d84-bcf0-584aaa0d4bc9
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 12:07:48 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 12:07:48 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 2.03 seconds (process running for 3.021)
-[2024-12-17 13:03:31 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Starting TokenProviderTest using Java 17.0.13 with PID 2528 (started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 13:03:31 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 13:03:32 INFO Test worker] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 13:03:32 WARN Test worker] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 9553a0ca-8c41-45dd-820e-d6dce771c50c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 13:03:32 INFO Test worker] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 13:03:32 INFO Test worker] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 13:03:33 INFO Test worker] [com.green.greengram.config.jwt.TokenProviderTest] Started TokenProviderTest in 1.885 seconds (process running for 2.821)
-[2024-12-17 13:03:40 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 2172 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 13:03:40 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 13:03:40 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 13:03:40 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 13:03:41 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:03:41 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 13:03:41 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 13:03:41 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 854 ms
-[2024-12-17 13:03:41 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 13:03:41 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: dde219d9-7939-4014-8ae2-987c9a11250f
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 13:03:41 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:03:41 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 13:03:41 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.865 seconds (process running for 2.251)
-[2024-12-17 13:03:47 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2024-12-17 13:03:47 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
-[2024-12-17 13:03:47 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 0 ms
-[2024-12-17 13:05:19 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 5128 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 13:05:19 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 13:05:19 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-[2024-12-17 13:05:19 INFO restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 13:05:20 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:05:20 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 13:05:20 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 13:05:20 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 850 ms
-[2024-12-17 13:05:20 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 13:05:20 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 781ba8eb-4ee1-467a-a8f2-cb517df7eed4
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 13:05:20 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:05:20 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 13:05:20 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.971 seconds (process running for 2.38)
-[2024-12-17 13:05:22 INFO http-nio-8080-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2024-12-17 13:05:22 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
-[2024-12-17 13:05:22 INFO http-nio-8080-exec-1] [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
-[2024-12-17 13:06:54 INFO http-nio-8080-exec-7] [org.springdoc.api.AbstractOpenApiResource] Init duration for springdoc-openapi is: 211 ms
-[2024-12-17 13:09:03 INFO File Watcher] [org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-[2024-12-17 13:09:03 INFO Thread-5] [org.apache.coyote.http11.Http11NioProtocol] Stopping ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:09:03 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Starting GreenGramSecurityApplication using Java 17.0.13 with PID 5128 (D:\jju\GreenGramSecurity\build\classes\java\main started by Administrator in D:\jju\GreenGramSecurity)
-[2024-12-17 13:09:03 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] No active profile set, falling back to 1 default profile: "default"
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat initialized with port 8080 (http)
-[2024-12-17 13:09:04 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Initializing ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:09:04 INFO restartedMain] [org.apache.catalina.core.StandardService] Starting service [Tomcat]
-[2024-12-17 13:09:04 INFO restartedMain] [org.apache.catalina.core.StandardEngine] Starting Servlet engine: [Apache Tomcat/10.1.33]
-[2024-12-17 13:09:04 INFO restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] Initializing Spring embedded WebApplicationContext
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 213 ms
-[2024-12-17 13:09:04 INFO restartedMain] [com.green.greengram.common.MyFileUtils] MyFileUtiles - 생성자: D:/mydownload/greengram_ver3
-[2024-12-17 13:09:04 WARN restartedMain] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] 
-
-Using generated security password: 267eafd6-8c5c-4d01-917d-988fd1dc7f0c
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
-[2024-12-17 13:09:04 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
-[2024-12-17 13:09:04 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 0.416 seconds (process running for 225.853)
-[2024-12-17 13:09:04 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] Condition evaluation unchanged
+[2024-12-18 12:53:32 INFO restartedMain] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+[2024-12-18 12:53:32 INFO restartedMain] [org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping] Adding welcome page: class path resource [static/index.html]
+[2024-12-18 12:53:32 INFO restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+[2024-12-18 12:53:32 INFO restartedMain] [org.apache.coyote.http11.Http11NioProtocol] Starting ProtocolHandler ["http-nio-8080"]
+[2024-12-18 12:53:32 INFO restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] Tomcat started on port 8080 (http) with context path '/'
+[2024-12-18 12:53:32 INFO restartedMain] [com.green.greengram.GreenGramSecurityApplication] Started GreenGramSecurityApplication in 1.994 seconds (process running for 2.369)

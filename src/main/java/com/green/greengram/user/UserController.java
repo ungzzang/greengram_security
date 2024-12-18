@@ -5,6 +5,8 @@ import com.green.greengram.user.follow.model.UserPicPatchReq;
 import com.green.greengram.user.model.*;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -36,8 +38,8 @@ public class UserController {
 
     @PostMapping("sign-in")
     @Operation(summary = "로그인")
-    public ResultResponse<UserSignInRes> signIn(@RequestBody UserSignInReq p){
-        UserSignInRes res = service.signIn(p);
+    public ResultResponse<UserSignInRes> signIn(@RequestBody UserSignInReq p, HttpServletResponse response){
+        UserSignInRes res = service.signIn(p, response);
 
         return ResultResponse.<UserSignInRes>builder()
                 .resultMessage(res.getMessage())
@@ -54,6 +56,16 @@ public class UserController {
         return ResultResponse.<UserInfoGetRes>builder()
                 .resultMessage("유저 프로필 정보")
                 .resultData(res)
+                .build();
+    }
+
+    @GetMapping("access-token")
+    @Operation(summary = "accessToken 재발행")
+    public ResultResponse<String> getAccessToken(HttpServletRequest req) {
+        String accessToken = service.getAccessToken(req);
+        return ResultResponse.<String>builder()
+                .resultMessage("Access Token 재발행")
+                .resultData(accessToken)
                 .build();
     }
 
