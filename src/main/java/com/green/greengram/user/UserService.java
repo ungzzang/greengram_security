@@ -4,6 +4,7 @@ import com.green.greengram.common.CookieUtils;
 import com.green.greengram.common.MyFileUtils;
 import com.green.greengram.config.jwt.JwtUser;
 import com.green.greengram.config.jwt.TokenProvider;
+import com.green.greengram.config.security.AuthenticationFacade;
 import com.green.greengram.user.follow.model.UserPicPatchReq;
 import com.green.greengram.user.model.*;
 
@@ -32,6 +33,7 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
     private final TokenProvider tokenProvider;
     private final CookieUtils cookieUtils;
+    private final AuthenticationFacade authenticationFacade;
 
     public int signUp(MultipartFile pic, UserSignUpReq p){
         String savedPicName = (pic != null ? myFileUtils.makeRandomFileName(pic) : null);
@@ -86,7 +88,7 @@ public class UserService {
         jwtUser.getRoles().add("ROLE_USER");
         jwtUser.getRoles().add("ROLE_ADMIN");
 
-        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(20)); //액세스토큰
+        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(100)); //액세스토큰
         String refreshToken = tokenProvider.generateToken(jwtUser, Duration.ofDays(15)); //리프레쉬토큰
 
         //refreshToken은 쿠키에 담는다.
@@ -99,17 +101,23 @@ public class UserService {
     }
 
     public UserInfoGetRes getUserInfo(UserInfoGetReq p){
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         return mapper.selUserInfo2(p);
     }
 
     public String getAccessToken(HttpServletRequest req){
         Cookie cookie = cookieUtils.getCookie(req, "refreshToken");
         String refreshToken = cookie.getValue();
+
         log.info("refreshToken: {}", refreshToken);
-        return refreshToken;
+
+        JwtUser jwtUser = tokenProvider.getJwtUserFromToken(refreshToken);
+        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(100));
+        return accessToken;
     }
 
     public String patchUserPic(UserPicPatchReq p){
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         // 1. 저장할 파일명(랜덤명 파일명) 생성한다. 이때, 확장자는 오리지날 파일명과 일치하게 한다.
         String savedPicName = (p.getPic() != null ? myFileUtils.makeRandomFileName(p.getPic()) : null);
 

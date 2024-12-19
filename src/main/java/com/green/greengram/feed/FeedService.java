@@ -1,6 +1,7 @@
 package com.green.greengram.feed;
 
 import com.green.greengram.common.MyFileUtils;
+import com.green.greengram.config.security.AuthenticationFacade;
 import com.green.greengram.feed.comment.FeedCommentMapper;
 import com.green.greengram.feed.comment.model.FeedCommentDto;
 import com.green.greengram.feed.comment.model.FeedCommentGetReq;
@@ -32,9 +33,11 @@ public class FeedService {
     private final FeedCommentMapper feedCommentMapper;
     private final MyFileUtils myFileUtils;
     private final FeedPicMapper feedPicMapper;
+    private final AuthenticationFacade authenticationFacade;
 
     @Transactional //트랜잭션은 하나의 작업 단위로 간주되어, 모든 작업이 성공하면 커밋(Commit)되고, 하나라도 실패하면 롤백(Rollback)되어 이전 상태로 복구된다.
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){
+        p.setWriterUserId(authenticationFacade.getSignedUserId());
         int result = feedMapper.insFeed(p);
 
         //----------------파일 등록
@@ -78,6 +81,7 @@ public class FeedService {
     } // 이 하나의 업무를 하나의 트랜젝션이라고 한다.
 
     public List<FeedGetRes> getFeedList(FeedGetReq p) { //피드 20개 있으면 총 41번 셀렉트한다.
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         // N + 1 이슈 발생
         List<FeedGetRes> list = feedMapper.selFeedList(p); //여기서 한 번 셀렉트 //최대 20개 넘어온다.(디폴트 size를 20으로 설정해서)
 
@@ -119,8 +123,12 @@ public class FeedService {
 
     //select 3번, 피드 5,000개 있음, 페이지당 20개씩 가져온다.
     public List<FeedGetRes> getFeedList3(FeedGetReq p) {
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         //피드 리스트
         List<FeedGetRes> list = feedMapper.selFeedList(p); // 여기서 pic은 null이다.아직, select 한 번.
+        if(list.size() == 0) { //list 없으면 바로 리턴(피드 없음)
+            return list;
+        }
 
         //feed_id를 골라내야 한다.
         List<Long> feedIds = new ArrayList<>(list.size());
@@ -196,6 +204,7 @@ public class FeedService {
 
     @Transactional
     public int deleteFeed(FeedDeleteReq p) {
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         //피드 댓글, 좋아요 삭제
         int affectedRowsEtc = feedMapper.delFeedLikeAndFeedCommentAndFeedPic(p);
         log.info("deleteFeed > affectedRows: {}", affectedRowsEtc);

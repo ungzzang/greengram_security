@@ -86,16 +86,20 @@ public class TokenProvider {//JWT담당
                 : new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
     } // UsernamePasswordAuthenticationToken은 Authentication 얘 상속받음
 
-    public UserDetails getUserDetailsFromToken(String token) {
-        Claims claims = getClaims(token); //디버깅했음 위랑같이
+    public JwtUser getJwtUserFromToken(String token) {
+        Claims claims = getClaims(token);
         String json = (String)claims.get("signedUser");
         JwtUser jwtUser = null;
-        try{
+        try {
             jwtUser = objectMapper.readValue(json, JwtUser.class);
         } catch (JsonProcessingException e) {
             throw new RuntimeException(e);
         }
+        return jwtUser;
+    }
 
+    public UserDetails getUserDetailsFromToken(String token) {
+        JwtUser jwtUser = getJwtUserFromToken(token);
         MyUserDetails userDetails = new MyUserDetails();
         userDetails.setJwtUser(jwtUser);
         return userDetails;

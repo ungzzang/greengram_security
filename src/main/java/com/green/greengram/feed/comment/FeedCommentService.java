@@ -1,6 +1,8 @@
 package com.green.greengram.feed.comment;
 
+import com.green.greengram.config.security.AuthenticationFacade;
 import com.green.greengram.feed.comment.model.*;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -13,8 +15,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class FeedCommentService {
     private final FeedCommentMapper mapper;
+    private final AuthenticationFacade authenticationFacade;
 
     public long postFeedComment(FeedCommentPostReq p){
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         int result = mapper.insFeedComment(p);
         //mapper.insFeedComment(p); 도 가능
         return p.getFeedCommentId();
@@ -40,6 +44,7 @@ public class FeedCommentService {
     }
 
     public int delFeedComment(FeedCommentDelReq p){
+        p.setSignedUserId(authenticationFacade.getSignedUserId());
         int result = mapper.delFeedComment(p);
         return result;
     }

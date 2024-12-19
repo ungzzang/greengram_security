@@ -11,8 +11,11 @@ import lombok.Setter;
 public class FeedPostReq {
     @JsonIgnore
     private long feedId;
-    @Schema(title = "로그인 유저 pk", example = "1", requiredMode = Schema.RequiredMode.REQUIRED)
-    private String writerUserId;
+
+    //@Schema(title = "로그인 유저 pk", example = "1", requiredMode = Schema.RequiredMode.REQUIRED)
+    @JsonIgnore //토큰값만 보내면 되어서
+    private long writerUserId;
+
     @Schema(title = "피드 내용", example = "피드 내용 테스트")
     private String contents;
     @Schema(title = "피드 위치", example = "서울특별시")
