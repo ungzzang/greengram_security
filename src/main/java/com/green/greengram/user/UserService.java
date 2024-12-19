@@ -64,7 +64,7 @@ public class UserService {
     public UserSignInRes signIn(UserSignInReq p, HttpServletResponse response){
         UserSignInRes res = mapper.selUserByUid(p.getUid());
 
-        if(res == null) {
+        if(res == null) { //아이디없음
             res = new UserSignInRes();
             res.setMessage("아이디를 확인하시오");
             return res;
@@ -86,8 +86,8 @@ public class UserService {
         jwtUser.getRoles().add("ROLE_USER");
         jwtUser.getRoles().add("ROLE_ADMIN");
 
-        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(20));
-        String refreshToken = tokenProvider.generateToken(jwtUser, Duration.ofDays(15));
+        String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(20)); //액세스토큰
+        String refreshToken = tokenProvider.generateToken(jwtUser, Duration.ofDays(15)); //리프레쉬토큰
 
         //refreshToken은 쿠키에 담는다.
         int maxAge = 1_296_000; //15 * 24 * 60 * 60, 15일의 초(second)값
