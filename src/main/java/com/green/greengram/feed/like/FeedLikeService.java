@@ -16,7 +16,7 @@ public class FeedLikeService {
     public int feedLikeToggle(FeedLikeReq p){
         p.setSignedUserId(authenticationFacade.getSignedUserId());
         int result = mapper.delFeedLike(p); //영향받은 행으로 구분
-        if(result == 0){ //처음에 좋아요가 안되어있다면
+        if(result == 0) { //처음에 좋아요가 안되어있다면
             return mapper.insFeedLike(p); //좋아요 둥록이 되었을 때 return 1
         }
         return 0; //좋아요 취소가 되었을 때

@@ -35,6 +35,7 @@ public class FeedService {
     private final FeedPicMapper feedPicMapper;
     private final AuthenticationFacade authenticationFacade;
 
+    //자동커밋종료
     @Transactional //트랜잭션은 하나의 작업 단위로 간주되어, 모든 작업이 성공하면 커밋(Commit)되고, 하나라도 실패하면 롤백(Rollback)되어 이전 상태로 복구된다.
     public FeedPostRes postFeed(List<MultipartFile> pics, FeedPostReq p){
         p.setWriterUserId(authenticationFacade.getSignedUserId());
@@ -79,6 +80,8 @@ public class FeedService {
                 .pics(picNameList)
                 .build();
     } // 이 하나의 업무를 하나의 트랜젝션이라고 한다.
+    // 에러터짐 - Rollback
+    // 에러안터짐 - Commit
 
     public List<FeedGetRes> getFeedList(FeedGetReq p) { //피드 20개 있으면 총 41번 셀렉트한다.
         p.setSignedUserId(authenticationFacade.getSignedUserId());

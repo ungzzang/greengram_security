@@ -30,7 +30,7 @@ public class CookieUtils {
         Cookie cookie = new Cookie(name, value);
         cookie.setPath("/api/user/access-token"); //이 요청으로 들어올 때만 쿠키값이 넘어올 수 있도록
         cookie.setHttpOnly(true); //보안 쿠키 설정, 프론트에서 JS로 쿠키값을 얻을 수 없다.
-        cookie.setMaxAge(maxAge);
+        cookie.setMaxAge(maxAge); //maxAge - 만료시간
         res.addCookie(cookie);
     }
 }

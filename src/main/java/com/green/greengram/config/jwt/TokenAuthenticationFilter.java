@@ -32,14 +32,14 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
         String authorizationHeader = request.getHeader(HEADER_AUTHORIZATION); //authorizationHeader 여기에 "Bearer 토큰값" 들어가 있을꺼다.
         log.info("authorizationHeader: {}", authorizationHeader);
 
-        String token = getAccessToken(authorizationHeader); //토큰얻어온다.
+        String token = getAccessToken(authorizationHeader); //토큰얻어온다.("Bearer"빼고 "토큰값" 만 가져옴)
         log.info("token: {}", token);
 
         if(tokenProvider.validToken(token)){//토큰이 정상이라면
-            Authentication auth = tokenProvider.getAuthentication(token);
-            SecurityContextHolder.getContext().setAuthentication(auth); //set하면 어디서 get할꺼다.
+            Authentication auth = tokenProvider.getAuthentication(token); //set하면 어디서 get할꺼다.
+            SecurityContextHolder.getContext().setAuthentication(auth); //지금들어온 요청 로그인으로 인정하는 과정
+            // 그 후 다음 필터로 전달
         }
-
         filterChain.doFilter(request, response); //다음필터에 request, response 넘겨준다.(모든 필터가 같은 요청, 응답을 갖게 된다.)
     }
 

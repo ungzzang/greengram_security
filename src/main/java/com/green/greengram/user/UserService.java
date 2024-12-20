@@ -70,7 +70,7 @@ public class UserService {
             res = new UserSignInRes();
             res.setMessage("아이디를 확인하시오");
             return res;
-        }else if(!passwordEncoder.matches(p.getUpw(), res.getUpw())){ //비밀번호 다를시
+        }else if(!passwordEncoder.matches(p.getUpw(), res.getUpw())){ //비밀번호 다를시, matches - 여기안에 BCrypt있다.
         //}else if(!BCrypt.checkpw(p.getUpw(), res.getUpw())){ //비밀번호 다를시
             res = new UserSignInRes();
             res.setMessage("비밀번호를 확인하시오");
@@ -78,15 +78,15 @@ public class UserService {
         }
 
         /*
-            JWT 토큰 생성 2개 (AccessToken 20분, RefreshToken 15일)
+            JWT 토큰 생성 2개 (AccessToken - 인증o [20분], RefreshToken - 인증x, 재발행o [15일])
          */
 
         JwtUser jwtUser = new JwtUser();
         jwtUser.setSignedUserId(res.getUserId());
         jwtUser.setRoles(new ArrayList<>(2));
 
-        jwtUser.getRoles().add("ROLE_USER");
-        jwtUser.getRoles().add("ROLE_ADMIN");
+        jwtUser.getRoles().add("ROLE_USER"); //하드코딩
+        jwtUser.getRoles().add("ROLE_ADMIN"); //하드코딩
 
         String accessToken = tokenProvider.generateToken(jwtUser, Duration.ofMinutes(100)); //액세스토큰
         String refreshToken = tokenProvider.generateToken(jwtUser, Duration.ofDays(15)); //리프레쉬토큰

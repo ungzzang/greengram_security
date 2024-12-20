@@ -38,7 +38,7 @@ public class UserController {
 
     @PostMapping("sign-in")
     @Operation(summary = "로그인")
-    public ResultResponse<UserSignInRes> signIn(@RequestBody UserSignInReq p, HttpServletResponse response){
+    public ResultResponse<UserSignInRes> signIn(@RequestBody UserSignInReq p, HttpServletResponse response){//HttpServletResponse response - 쿠키에 담기위해 팔요했다.
         UserSignInRes res = service.signIn(p, response);
 
         return ResultResponse.<UserSignInRes>builder()
@@ -61,7 +61,7 @@ public class UserController {
 
     @GetMapping("access-token")
     @Operation(summary = "accessToken 재발행")
-    public ResultResponse<String> getAccessToken(HttpServletRequest req) {
+    public ResultResponse<String> getAccessToken(HttpServletRequest req) { //HttpServletRequest req servlet이 여기에 주소값넣어준다.
         String accessToken = service.getAccessToken(req);
         return ResultResponse.<String>builder()
                 .resultMessage("Access Token 재발행")

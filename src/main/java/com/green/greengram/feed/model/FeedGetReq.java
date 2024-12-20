@@ -3,6 +3,7 @@ package com.green.greengram.feed.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.green.greengram.common.model.Paging;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Positive;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
@@ -18,6 +19,7 @@ public class FeedGetReq extends Paging {
     @JsonIgnore
     private long signedUserId; //로그인한 사용자의 pk를 받음(사용자가 좋아요를 눌렀는지 보려고)
 
+    @Positive // 1이상 정수이어야 한다.
     @Schema(title = "프로필 유저 PK", name = "profile_user_id", example = "1", requiredMode = Schema.RequiredMode.NOT_REQUIRED)
     private Long profileUserId;
 
