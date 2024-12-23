@@ -8,6 +8,7 @@ import com.green.greengram.feed.comment.model.FeedCommentPostReq;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -38,16 +39,17 @@ public class FeedCommentController {
     // @ModelAttribute는 프론트가 값을 알아서 넣어라라고 하는데 지금 feedId가 프론트에서는 feed_id로 되어 있어서 안맞아서 생성자에서 @BindParam사용했음.
     // @RequestParam은 컨트롤러에서 쓰는거, 변수 하나하나 맞춰줄수 있음. 근데 변수 많아지면 불리해져서 객체로 보내는게 더 낫다.
 
+
     @GetMapping
     @Operation(summary = "피드 댓글 리스트", description = "댓글 더보기 처리 - 파라미터를 ModelAttribute를 이용해서 받음")
-    public ResultResponse<FeedCommentGetRes> getFeedCommentList(@ParameterObject @ModelAttribute FeedCommentGetReq p){ //쌤픽
+    public ResultResponse<FeedCommentGetRes> getFeedCommentList(@Valid @ParameterObject @ModelAttribute FeedCommentGetReq p){ //쌤픽
         log.info("FeedCommentController > getFeedComment > p: {}", p);
         FeedCommentGetRes res = service.getFeedComment(p);
         return ResultResponse.<FeedCommentGetRes>builder()
                 .resultMessage(String.format("%d rows", res.getCommentList().size()))
                 .resultData(res)
                 .build();
-    }
+    }//@Valid - 이거 사용했다.
 
     /*
         생성자와 @BindParam 안쓸꺼면 밑에 처럼 쓰면된다. (프론트랑 맞춰주려고 이런 과정이 있는데 프론트랑 카멜케이스 쓰는거에 대해 잘 의논해서 해보자)

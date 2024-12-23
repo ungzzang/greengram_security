@@ -23,7 +23,7 @@ public class MyErrorResponse extends ResultResponse<String> {
         private final String field;
         private final String message;
 
-        // of라는 static 메소드
+        // of라는 static 메소드 (클래스안에서 직접 객체화)
         public static ValidationError of(final FieldError fieldError) {
             return ValidationError.builder()
                     .field(fieldError.getField())

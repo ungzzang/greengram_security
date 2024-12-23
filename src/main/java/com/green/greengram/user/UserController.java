@@ -7,6 +7,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springdoc.core.annotations.ParameterObject;
@@ -38,11 +39,11 @@ public class UserController {
 
     @PostMapping("sign-in")
     @Operation(summary = "로그인")
-    public ResultResponse<UserSignInRes> signIn(@RequestBody UserSignInReq p, HttpServletResponse response){//HttpServletResponse response - 쿠키에 담기위해 팔요했다.
+    public ResultResponse<UserSignInRes> signIn(@Valid @RequestBody UserSignInReq p, HttpServletResponse response){//HttpServletResponse response - 쿠키에 담기위해 팔요했다.
         UserSignInRes res = service.signIn(p, response);
 
         return ResultResponse.<UserSignInRes>builder()
-                .resultMessage(res.getMessage())
+                .resultMessage("로그인 성공")//정상적인 처리만 신경쓴다.
                 .resultData(res)
                 .build();
     }
