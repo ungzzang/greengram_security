@@ -1,0 +1,9 @@
+file:
+  directory: /home/download
+
+
+spring:
+  datasource:
+    url: jdbc:log4jdbc:mariadb://192.168.0.144/db_even_first_1
+    username: even_first_1
+    password:
