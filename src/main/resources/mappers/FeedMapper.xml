@@ -32,6 +32,76 @@
 
     </select>
 
+
+    <!--SELECT 두번용-->
+    <select id="selFeedWithPicList">
+
+            SELECT T1.*, T2.pic
+            FROM (
+            SELECT A.feed_id AS feedId, A.contents, A.location
+            , A.created_at AS createdAt
+            , B.user_id AS writerUserId
+            , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+            , B.pic AS writerPic
+            , IF(C.feed_id IS NULL, 0, 1) AS isLike
+            FROM feed A
+            INNER JOIN user B
+            ON A.writer_user_id = B.user_id
+            LEFT JOIN feed_like C
+            ON A.feed_id = C.feed_id
+            AND C.user_id = #{signedUserId}
+            <if test=" profileUserId != null ">
+                WHERE A.writer_user_id = #{profileUserId}
+            </if>
+            ORDER BY A.feed_id DESC
+            LIMIT #{startIdx}, #{size}
+            ) T1
+            INNER JOIN feed_pic T2
+            ON T1.feedId = T2.feed_id
+
+    </select>
+
+    <select id="selFeedWithPicAndCommentLimit4List">
+        SELECT T1.*, T2.pic, T3.*
+        FROM (
+        SELECT A.feed_id AS feedId, A.contents, A.location
+        , A.created_at AS createdAt
+        , B.user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        , IF(C.feed_id IS NULL, 0, 1) AS isLike
+        FROM feed A
+        INNER JOIN user B
+        ON A.writer_user_id = B.user_id
+        LEFT JOIN feed_like C
+        ON A.feed_id = C.feed_id
+        AND C.user_id = #{signedUserId}
+            <if test=" profileUserId != null ">
+                WHERE A.writer_user_id = #{profileUserId}
+            </if>
+        ORDER BY A.feed_id DESC
+        LIMIT #{startIdx}, #{size}
+        ) T1
+        INNER JOIN feed_pic T2
+        ON T1.feedId = T2.feed_id
+        LEFT JOIN (
+        SELECT A.feed_id, A.feed_comment_id, A.`COMMENT`
+            , C.user_id AS commentWriterUserId
+            , IF(C.nick_name IS NULL, C.uid, C.nick_name) AS commentWriterNm
+            , C.pic AS commentWriterPic
+        FROM feed_comment A
+        LEFT JOIN feed_comment B
+        ON A.feed_id = B.feed_id
+        AND A.feed_comment_id > B.feed_comment_id
+        INNER JOIN user C
+        ON A.user_id = C.user_id
+        GROUP BY A.feed_id, A.feed_comment_id, A.`COMMENT`
+        HAVING COUNT(A.feed_id) <![CDATA[ < ]]> 4
+        ) T3
+        ON T1.feedId = T3.feed_id
+    </select>
+
+
     <!-- 좋아요 처리하기 전
     <select id="selFeedList">
         SELECT a.feed_id AS feedId, a.contents, a.location, a.created_at AS createdAt

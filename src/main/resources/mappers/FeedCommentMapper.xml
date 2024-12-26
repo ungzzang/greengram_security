@@ -55,4 +55,50 @@
         WHERE T.num <![CDATA[ <= ]]> 4
     </select>
 
+    <resultMap id="feedResultMap" type="com.green.greengram.feed.model.FeedWithPicCommentDto">
+        <id property="feedId" column="feedId" /> <!--property는 객체의 멤버필드 이름, column은 쿼리의 컬럼명-->
+        <result property="contents" column="contents" />
+        <result property="location" column="location" />
+        <result property="createdAt" column="createdAt" />
+        <result property="writerUserId" column="writerUserId" />
+        <result property="writerNm" column="writerNm" />
+        <result property="writerPic" column="writerPic" />
+        <result property="isLike" column="isLike" />
+        <collection property="pics" resultMap="feedPicResultMap" />
+        <collection property="commentList" resultMap="feedCommentResultMap" />
+    </resultMap>
+
+    <resultMap id="feedPicResultMap" type="String">
+        <result property="pic" column="pic" />
+    </resultMap>
+
+    <resultMap id="feedCommentResultMap" type="com.green.greengram.feed.comment.model.FeedCommentDto">
+        <id property="feedCommentId" column="feed_comment_id" />
+        <result property="comment" column="comment" />
+        <result property="writerUserId" column="commentWriterUserId" />
+        <result property="writerNm" column="commentWriterNm" />
+        <result property="writerPic" column="commentWriterPic" />
+    </resultMap>
+
+    <select id="selFeedCommentListByFeedIdsLimit4Ver2" resultMap="feedResultMap">
+        SELECT T.feedId, T.feedCommentId, T.comment, T.writerUserId, T.writerNm, T.writerPic
+        FROM (
+        SELECT ROW_NUMBER() OVER (PARTITION BY A.feed_id ORDER BY A.feed_id, A.feed_comment_id DESC) AS num
+        , A.feed_id AS feedId
+        , A.feed_comment_id AS feedCommentId
+        , A.comment
+        , B.user_id AS writerUserId
+        , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+        , B.pic AS writerPic
+        FROM feed_comment A
+        INNER JOIN user B
+        ON A.user_id = B.user_id
+        WHERE A.feed_id IN
+        <foreach collection="feedIds" item="item" open="(" separator="," close=")">
+            #{item}
+        </foreach>
+        ) T
+        WHERE T.num <![CDATA[ <= ]]> 4
+    </select>
+
 </mapper>

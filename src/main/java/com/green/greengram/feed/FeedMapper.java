@@ -9,6 +9,9 @@ import java.util.List;
 public interface FeedMapper {
     int insFeed(FeedPostReq p);
     List<FeedGetRes> selFeedList(FeedGetReq p);
+    List<FeedAndPicDto> selFeedWithPicList(FeedGetReq p); // SELECT 두번용
+    List<FeedWithPicCommentDto> selFeedWithPicAndCommentLimit4List(FeedGetReq p);
+
 
     int delFeedLikeAndFeedCommentAndFeedPic(FeedDeleteReq p);
     int delFeed(FeedDeleteReq p);

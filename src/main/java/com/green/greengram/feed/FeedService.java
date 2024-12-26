@@ -130,7 +130,71 @@ public class FeedService {
 
     //select 2번
     public List<FeedGetRes> getFeedList2(FeedGetReq p) {
-        return null;
+        List<FeedGetRes> list = new ArrayList<>(p.getSize());
+
+        //SELECT (1): feed + feed_pic
+        List<FeedAndPicDto> feedAndPicDtoList = feedMapper.selFeedWithPicList(p);
+        List<Long> feedIds = new ArrayList<>(list.size());
+
+        FeedGetRes beforeFeedGetRes = new FeedGetRes(); //null빼고싶어서
+        for(FeedAndPicDto feedAndPicDto : feedAndPicDtoList) {
+            if(beforeFeedGetRes.getFeedId() != feedAndPicDto.getFeedId()) {
+                feedIds.add(feedAndPicDto.getFeedId());
+
+                beforeFeedGetRes = new FeedGetRes(); //null체크 빼고싶어서
+                beforeFeedGetRes.setPics(new ArrayList<>(3));
+                list.add(beforeFeedGetRes);
+                beforeFeedGetRes.setFeedId(feedAndPicDto.getFeedId());
+                beforeFeedGetRes.setContents(feedAndPicDto.getContents());
+                beforeFeedGetRes.setLocation(feedAndPicDto.getLocation());
+                beforeFeedGetRes.setCreatedAt(feedAndPicDto.getCreatedAt());
+                beforeFeedGetRes.setWriterNm(feedAndPicDto.getWriterNm());
+                beforeFeedGetRes.setWriterPic(feedAndPicDto.getWriterPic());
+                beforeFeedGetRes.setIsLike(feedAndPicDto.getIsLike());
+            }
+
+            beforeFeedGetRes.getPics().add(feedAndPicDto.getPic());
+        }
+
+        //SELECT (2): feed_comment
+        //피드와 관련된 댓글 리스트
+        List<FeedCommentDto> feedCommentList = feedCommentMapper.selFeedCommentListByFeedIdsLimit4Ver2(feedIds);
+        Map<Long, FeedCommentGetRes> commentHashMap = new HashMap<>();
+        for(FeedCommentDto item : feedCommentList) {
+            long feedId = item.getFeedId();
+            if(!commentHashMap.containsKey(feedId)) {
+                FeedCommentGetRes feedCommentGetRes = new FeedCommentGetRes();
+                feedCommentGetRes.setCommentList(new ArrayList<>(4));
+                commentHashMap.put(feedId, feedCommentGetRes);
+            }
+            FeedCommentGetRes feedCommentGetRes = commentHashMap.get(feedId);
+            feedCommentGetRes.getCommentList().add(item);
+        }
+        for(FeedGetRes res : list) {
+            FeedCommentGetRes feedCommentGetRes = commentHashMap.get(res.getFeedId());
+
+            if(feedCommentGetRes == null) { //댓글이 하나도 없었던 피드인 경우
+                feedCommentGetRes = new FeedCommentGetRes();
+                feedCommentGetRes.setCommentList(new ArrayList<>());
+            } else if (feedCommentGetRes.getCommentList().size() == 4) {
+                feedCommentGetRes.setMoreComment(true);
+                feedCommentGetRes.getCommentList().remove(feedCommentGetRes.getCommentList().size() - 1);
+            }
+            res.setComment(feedCommentGetRes);
+        }
+
+        return list;
+    }
+
+    //검토필요(12_26)
+    public List<FeedGetRes> getFeedList4(FeedGetReq p){
+        List<FeedWithPicCommentDto> dtoList = feedMapper.selFeedWithPicAndCommentLimit4List(p);
+        List<FeedGetRes> res = new ArrayList<>(dtoList.size());
+        for(FeedWithPicCommentDto dto : dtoList){
+            FeedGetRes res1 = new FeedGetRes(dto);
+            res.add(res1);
+        }
+        return res;
     }
 
     //select 3번, 피드 5,000개 있음, 페이지당 20개씩 가져온다.
