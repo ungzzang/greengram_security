@@ -55,6 +55,7 @@
         WHERE T.num <![CDATA[ <= ]]> 4
     </select>
 
+    <!-- resultMap으로 매핑해서 밑에서 나온 결과를 여기 담아서 id는 pk라서 중복이면 하나로 만들어줌-->
     <resultMap id="feedResultMap" type="com.green.greengram.feed.model.FeedWithPicCommentDto">
         <id property="feedId" column="feedId" /> <!--property는 객체의 멤버필드 이름, column은 쿼리의 컬럼명-->
         <result property="contents" column="contents" />
@@ -64,16 +65,16 @@
         <result property="writerNm" column="writerNm" />
         <result property="writerPic" column="writerPic" />
         <result property="isLike" column="isLike" />
-        <collection property="pics" resultMap="feedPicResultMap" />
-        <collection property="commentList" resultMap="feedCommentResultMap" />
+        <collection property="pics" resultMap="feedPicResultMap" /> <!--id기준으로 pic을 리스트로 자동으로 만들어줌-->
+        <collection property="commentList" resultMap="feedCommentResultMap" /> <!--collection은 리스트다-->
     </resultMap>
 
     <resultMap id="feedPicResultMap" type="String">
-        <result property="pic" column="pic" />
+        <id property="pic" column="pic" />
     </resultMap>
 
     <resultMap id="feedCommentResultMap" type="com.green.greengram.feed.comment.model.FeedCommentDto">
-        <id property="feedCommentId" column="feed_comment_id" />
+        <id property="feedCommentId" column="feed_comment_id" /> <!--id 기준으로 리스트로 담아줌-->
         <result property="comment" column="comment" />
         <result property="writerUserId" column="commentWriterUserId" />
         <result property="writerNm" column="commentWriterNm" />

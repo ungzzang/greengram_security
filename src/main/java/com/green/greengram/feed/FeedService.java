@@ -133,12 +133,13 @@ public class FeedService {
         List<FeedGetRes> list = new ArrayList<>(p.getSize());
 
         //SELECT (1): feed + feed_pic
-        List<FeedAndPicDto> feedAndPicDtoList = feedMapper.selFeedWithPicList(p);
+        List<FeedAndPicDto> feedAndPicDtoList = feedMapper.selFeedWithPicList(p); //중복되는 내용까지 다 들어간다.(밑에서 정리함)
         List<Long> feedIds = new ArrayList<>(list.size());
 
-        FeedGetRes beforeFeedGetRes = new FeedGetRes(); //null빼고싶어서
+        //중복되는 내용 하나로, 사진은 하나로(List로) -> FeedGetRes에 담는거
+        FeedGetRes beforeFeedGetRes = new FeedGetRes();//feedId에는 0이 들어감(기본으로) //null빼고싶어서
         for(FeedAndPicDto feedAndPicDto : feedAndPicDtoList) {
-            if(beforeFeedGetRes.getFeedId() != feedAndPicDto.getFeedId()) {
+            if(beforeFeedGetRes.getFeedId() != feedAndPicDto.getFeedId()) { //전 feedId랑 현재 튜플에서 가져온 feedId가 다르다면~
                 feedIds.add(feedAndPicDto.getFeedId());
 
                 beforeFeedGetRes = new FeedGetRes(); //null체크 빼고싶어서
@@ -186,11 +187,12 @@ public class FeedService {
         return list;
     }
 
-    //검토필요(12_26)
+    //검토필요(12_26) //mybatis 기능 사용해서 코드작성한거
     public List<FeedGetRes> getFeedList4(FeedGetReq p){
         List<FeedWithPicCommentDto> dtoList = feedMapper.selFeedWithPicAndCommentLimit4List(p);
         List<FeedGetRes> res = new ArrayList<>(dtoList.size());
         for(FeedWithPicCommentDto dto : dtoList){
+            //list.add(new FeedGetRes(item));쌤
             FeedGetRes res1 = new FeedGetRes(dto);
             res.add(res1);
         }

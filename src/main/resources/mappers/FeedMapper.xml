@@ -38,26 +38,26 @@
 
             SELECT T1.*, T2.pic
             FROM (
-            SELECT A.feed_id AS feedId, A.contents, A.location
-            , A.created_at AS createdAt
-            , B.user_id AS writerUserId
-            , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
-            , B.pic AS writerPic
-            , IF(C.feed_id IS NULL, 0, 1) AS isLike
+                SELECT A.feed_id AS feedId, A.contents, A.location
+                    , A.created_at AS createdAt
+                    , B.user_id AS writerUserId
+                    , IF(B.nick_name IS NULL, B.uid, B.nick_name) AS writerNm
+                    , B.pic AS writerPic
+                    , IF(C.feed_id IS NULL, 0, 1) AS isLike
             FROM feed A
             INNER JOIN user B
-            ON A.writer_user_id = B.user_id
-            LEFT JOIN feed_like C
-            ON A.feed_id = C.feed_id
-            AND C.user_id = #{signedUserId}
-            <if test=" profileUserId != null ">
-                WHERE A.writer_user_id = #{profileUserId}
-            </if>
+               ON A.writer_user_id = B.user_id
+             LEFT JOIN feed_like C
+               ON A.feed_id = C.feed_id
+              AND C.user_id = #{signedUserId}
+                    <if test=" profileUserId != null ">
+                        WHERE A.writer_user_id = #{profileUserId}
+                    </if>
             ORDER BY A.feed_id DESC
-            LIMIT #{startIdx}, #{size}
+            LIMIT #{startIdx}, #{size} <!--피드먼저 리밋트로 가져오고 사진가져온거-->
             ) T1
             INNER JOIN feed_pic T2
-            ON T1.feedId = T2.feed_id
+               ON T1.feedId = T2.feed_id
 
     </select>
 
